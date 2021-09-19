@@ -65,8 +65,61 @@ const questions = [
       type: 'list',
       message: 'What license is your project under?',
       name: 'license', 
-      choices: ['MIT', 'GNU']
+      choices: ['MIT', 'GNU'],
+      validate: Input => {
+        if (Input) {
+            return true;
+        } else {
+            console.log('Select one of the above.');
+            return false; 
+        }
+    } 
     },
+
+    {
+      type: 'input',
+      message: 'What are the installation requirements?',
+      name: 'install', 
+      validate: Input => {
+        if (Input) {
+            return true;
+        } else {
+            console.log('Please enter an installation guide.');
+            return false; 
+        }
+    } 
+    },
+
+    {
+      type: 'list',
+      message: 'What license is your project under?',
+      name: 'license', 
+      choices: ['MIT', 'GNU'],
+      validate: Input => {
+        if (Input) {
+            return true;
+        } else {
+            console.log('Select one of the above.');
+            return false; 
+        }
+    } 
+    },
+
+    {
+      type: 'list',
+      message: 'What license is your project under?',
+      name: 'license', 
+      choices: ['MIT', 'GNU'],
+      validate: Input => {
+        if (Input) {
+            return true;
+        } else {
+            console.log('Select one of the above.');
+            return false; 
+        }
+    } 
+    },
+
   ])
 ];
 
