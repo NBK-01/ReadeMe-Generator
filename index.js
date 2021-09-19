@@ -62,9 +62,10 @@ const questions = [
     } 
     },
     {
-      type: '',
-      message: '',
-      name: '', 
+      type: 'list',
+      message: 'What license is your project under?',
+      name: 'license', 
+      choices: ['MIT', 'GNU']
     },
   ])
 ];
