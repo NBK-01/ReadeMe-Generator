@@ -10,8 +10,8 @@ const questions = [
       type: 'input',
       message: 'What is your user name?',
       name: 'username',
-      validate: userInput => {
-        if (userInput) {
+      validate: Input => {
+        if (Input) {
             return true;
         } else {
             console.log('Please enter your user name.');
@@ -19,20 +19,47 @@ const questions = [
         }
     } 
     },
+
     {
-      type: '',
-      message: '',
-      name: '',
+      type: 'input',
+      message: 'What is your E-mail?',
+      name: 'email',
+      validate: Input => {
+        if (Input) {
+            return true;
+        } else {
+            console.log('Please enter your E-mail.');
+            return false; 
+        }
+    } 
     },
+
     {
-      type: '',
-      message: '',
-      name: '',
+      type: 'input',
+      message: 'What is your Project Name?',
+      name: 'project',
+      validate: Input => {
+        if (Input) {
+            return true;
+        } else {
+            console.log('Please enter a project name');
+            return false; 
+        }
+    } 
     },
+
     {
-      type: '',
-      message: '',
-      name: '',
+      type: 'input',
+      message: 'description',
+      name: 'Tell me more about your project.',
+      validate: Input => {
+        if (Input) {
+            return true;
+        } else {
+            console.log('Please enter a description');
+            return false; 
+        }
+    } 
     },
     {
       type: '',
