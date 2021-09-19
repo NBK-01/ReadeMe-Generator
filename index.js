@@ -91,33 +91,23 @@ const questions = [
     },
 
     {
-      type: 'list',
-      message: 'What license is your project under?',
-      name: 'license', 
-      choices: ['MIT', 'GNU'],
+      type: 'input',
+      message: 'How do users use this application?',
+      name: 'usage', 
       validate: Input => {
         if (Input) {
             return true;
         } else {
-            console.log('Select one of the above.');
+            console.log('Please enter a usage guide.');
             return false; 
         }
     } 
     },
 
     {
-      type: 'list',
-      message: 'What license is your project under?',
-      name: 'license', 
-      choices: ['MIT', 'GNU'],
-      validate: Input => {
-        if (Input) {
-            return true;
-        } else {
-            console.log('Select one of the above.');
-            return false; 
-        }
-    } 
+      type: 'input',
+      message: 'How can users test this application?',
+      name: 'test', 
     },
 
   ])
