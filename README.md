@@ -1,4 +1,4 @@
-# ReadME-Generator
+# README-gen
 [![License: GPL v3](https://img.shields.io/badge/License-MIT-orange)](https://www.gnu.org/licenses/gpl-3.0)
 # Table of Contents
 1. [Description](#description)
@@ -9,15 +9,15 @@
 6. [License](#license)
 7. [Questions](#questions)
 ## Description <a name="description"></a>
-undefined
-## Installation Guide <a name="install"></a>
-npm install
-## Usage Guide <a name="usage"></a>
 nnn
+## Installation Guide <a name="install"></a>
+nnn
+## Usage Guide <a name="usage"></a>
+nn
 ## Testing Guide <a name="test"></a>
 npm test
 ## Contributions <a name="contribution"></a>
-nnn
+
 ## License <a name="license"></a>
 MIT https://opensource.org/licenses/MIT
 A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.

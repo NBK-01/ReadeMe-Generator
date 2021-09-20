@@ -111,7 +111,7 @@ const questions = [
 
 
   function writeToFile(fileName, data) {
-    fs.writeFile(`${fileName}.md`, generateMarkdown(data), (err) =>
+    fs.writeFile(`./output/${fileName}.md`, generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log("Succesfully generated!")
     );
   }
