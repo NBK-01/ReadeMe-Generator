@@ -63,7 +63,7 @@ const questions = [
       type: 'list',
       message: 'What license is your project under?',
       name: 'license', 
-      choices: ['MIT', 'GNU', 'APACHE 2.0', 'ISC', 'None'],
+      choices: ['MIT', 'GNU', 'APACHE 2.0', 'ISC'],
     },
 
     {
