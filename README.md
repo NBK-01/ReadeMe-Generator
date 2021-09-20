@@ -8,20 +8,29 @@
 5. [Contributions](#contribution)
 6. [License](#license)
 7. [Questions](#questions)
-## Description <a name="description"></a>
-Creating a detailed ReadMe.md file is very important for open source projects and can slow down development. This uses Node.JS to allow Open source developers to create ReadMe files effeciently.
-## Installation Guide <a name="install"></a>
-1. npm install inquirer 2. npm install fs
-## Usage Guide <a name="usage"></a>
-1. npm install 2. node index.js
-## Testing Guide <a name="test"></a>
 
-## Contributions <a name="contribution"></a>
+## Description <a name="description"></a>
+
+Creating a detailed ReadMe.md file is very important for open source projects and can slow down development. This uses Node.JS to allow Open source developers to create ReadMe files effeciently.
+
+## Installation Guide <a name="install"></a>
+
+1. npm install inquirer 
+2. npm install fs
+
+## Usage Guide <a name="usage"></a>
+
+1. npm install 
+2. node index.js
+
+## Demo
+![04-11-55](https://user-images.githubusercontent.com/73779089/133949501-dda3ac02-a5cb-45ba-88de-5855acc71ec5.gif)
+
+
 
 ## License <a name="license"></a>
 MIT https://opensource.org/licenses/MIT
 A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
 ## Questions <a name="questions"></a>
-GitHub name: NBK-01
-(https://github.com/NBK-01)
 Contact at: nayefkanaan03@gmail.com
