@@ -110,19 +110,25 @@ const questions = [
   ]
 
 
+  function writeToFile(fileName, data) {
+    fs.writeFile(`${fileName}.md`, generateMarkdown(data), (err) =>
+    err ? console.error(err) : console.log("Succesfully generated!")
+    );
+  }
+
 
 function init() {
-  inquirer.then((answers) => {
-    generateMarkdown(answers);
-    console.log('Successfully generated!')
-    writeToFile(answers);
-    return(answers);
-  }) 
+  inquirer.prompt(questions)
+  .then((answer) => {
+      writeToFile("README", answer);
+  });
 }
 
 
-function writeToFile(data) {
-  fs.writeFile('README.md', generateMarkdown(data))
+function writeToFile(fileName, data) {
+  fs.writeFile(`${fileName}.md`, generateMarkdown(data), (err) =>
+  err ? console.error(err) : console.log("Succesfully generated!")
+  );
 }
 
 
