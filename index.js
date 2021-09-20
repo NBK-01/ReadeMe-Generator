@@ -121,7 +121,7 @@ const questions = [
 ];
 
 
-function writeToFile(fileName, data) {}
+function writeToFile('README.md', data) {}
 
 
 function init() {}
