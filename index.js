@@ -113,22 +113,17 @@ const questions = [
 ];
 
 
-const writeToFile = data => {
-  fs.writeToFile('README.md', data, err => {
-    if(err){
-      console.log(err);
-      return;
-    }
-    else{
-      console.log("Success!")
-    }
-  })
-}
-
 
 function init() {
-  
+  inquirer
+  .prompt(questions).then((answers) => {
+    generateMarkdown(answers);
+    console.log('Successfully generated!')
+    writeToFile(answers);
+    return(answers);
+  }) 
 }
+
 
 
 init();
