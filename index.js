@@ -65,15 +65,7 @@ const questions = [
       type: 'list',
       message: 'What license is your project under?',
       name: 'license', 
-      choices: ['MIT', 'GNU'],
-      validate: Input => {
-        if (Input) {
-            return true;
-        } else {
-            console.log('Select one of the above.');
-            return false; 
-        }
-    } 
+      choices: ['MIT', 'GNU', 'APACHE 2.0', 'ISC', 'None'],
     },
 
     {
@@ -121,10 +113,22 @@ const questions = [
 ];
 
 
-function writeToFile('README.md', data) {}
+const writeToFile = data => {
+  fs.writeToFile('README.md', data, err => {
+    if(err){
+      console.log(err);
+      return;
+    }
+    else{
+      console.log("Success!")
+    }
+  })
+}
 
 
-function init() {}
+function init() {
+  
+}
 
 
 init();
