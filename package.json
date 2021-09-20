@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/NBK-01/ReadeMe-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.1.2"
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.5"
   }
 }

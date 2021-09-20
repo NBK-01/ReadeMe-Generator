@@ -4,8 +4,6 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMD');
 
 const questions = [
-    inquirer
-  .prompt([
     {
       type: 'input',
       message: 'What is your user name?',
@@ -109,14 +107,12 @@ const questions = [
     },
 
 
-  ])
-];
+  ]
 
 
 
 function init() {
-  inquirer
-  .prompt(questions).then((answers) => {
+  inquirer.then((answers) => {
     generateMarkdown(answers);
     console.log('Successfully generated!')
     writeToFile(answers);
