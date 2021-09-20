@@ -48,8 +48,8 @@ const questions = [
 
     {
       type: 'input',
-      message: 'description',
-      name: 'Tell me more about your project.',
+      message: 'Tell me more about your project.',
+      name: 'Description',
       validate: Input => {
         if (Input) {
             return true;
