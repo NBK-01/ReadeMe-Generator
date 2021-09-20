@@ -54,29 +54,29 @@ function generateMarkdown(data) {
 ${renderLicenseBadge(data.license)}
 # Table of Contents
 1. [Description](#description)
-2. [Installation Instructions](#install)
-3. [Usage](#usage)
-4. [Test Instructions](#test)
-5. [Contribution Guidelines](#contribution)
+2. [Installation Guide](#install)
+3. [Usage Guide](#usage)
+4. [Testing Guide](#test)
+5. [Contributions](#contribution)
 6. [License](#license)
 7. [Questions](#questions)
 ## Description <a name="description"></a>
 ${data.description}
-## Installation Instructions <a name="install"></a>
+## Installation Guide <a name="install"></a>
 ${data.install}
-## Usage <a name="usage"></a>
+## Usage Guide <a name="usage"></a>
 ${data.usage}
-## Test Instructions <a name="test"></a>
+## Testing Guide <a name="test"></a>
 ${data.test}
-## Contribution Guidelines <a name="contribution"></a>
+## Contributions <a name="contribution"></a>
 ${data.contributors}
 ## License <a name="license"></a>
 ${data.license} ${renderLicenseLink(data.license)}
 ${renderLicenseSection(data.license)}
 ## Questions <a name="questions"></a>
 GitHub name: ${data.username}
-[GitHub Profile](https://github.com/${data.username})
-To contact me, drop an email to: ${data.email}`;
+(https://github.com/${data.username})
+Contact at: ${data.email}`;
 }
 
 
