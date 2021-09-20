@@ -125,11 +125,7 @@ function init() {
 }
 
 
-function writeToFile(fileName, data) {
-  fs.writeFile(`${fileName}.md`, generateMarkdown(data), (err) =>
-  err ? console.error(err) : console.log("Succesfully generated!")
-  );
-}
+
 
 
 init();
