@@ -125,5 +125,9 @@ function init() {
 }
 
 
+function writeToFile(data) {
+  fs.writeFile('README.md', generateMarkdown(data))
+}
+
 
 init();
