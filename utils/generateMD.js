@@ -1,22 +1,15 @@
-const licensLinks = [
-  {
-    'license' : 'GNU',
-    'url' : 'https://opensource.org/license/GNU'
-  },
-  {
-    'license' : 'MIT',
-    'url' : 'https://opensource.org/license/MIT'
-  },
-  {
-    'license' : 'APACHE 2.0',
-    'url' : 'https://opensource.org/license/Apache-2.0'
-  },
-  {
-    'license' : 'ISC',
-    'url' : 'https://opensource.org/license/ISC'
-  },
-];
-
+switch (license) {
+  case "GNU":
+    return "[![License: GNU](https://img.shields.io/badge/License-GNU-orange)]";
+  case "MIT":
+    return "[![License: GPL v3](https://img.shields.io/badge/License-MIT-orange)](https://www.gnu.org/licenses/gpl-3.0)";
+  case "APACHE":
+    return "[![License: MIT](https://img.shields.io/badge/License-APACHE-yellow.svg";
+  case "ISC":
+    return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]";
+  default:
+    return ""; 
+};
 
 
 function renderLicenseBadge(license) {
@@ -60,39 +53,6 @@ function renderLicenseSection(license) {
 }
 
 
-function generateMarkdown(data) {
-  const {license, description, username, projectTitle:project, email, install, usage, contributors, test} = data;
-  return `# **${project}**
-  ${renderLicenseBadge(data.license)}       
-  ## Description
-  ${description}
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  ${renderLicenseLink(license)}
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  ## Installation
-  Run this command to install the necessary dependencies:
-  ~~~
-  ${install}
-  ~~~
-  ## Usage
-  ~~~
-  ${usage}
-  ~~~
-  ## Contributing
-  ${contributors}
-  ${renderLicenseSection(license)}
-  ## Tests
-  This is the command to run for testing:   
-  ~~~
-  ${test}
-  ~~~
-  ## Questions
-  For questions or comments about the project, feel free to open an issue in the repository or contact me directly at ${email}. To see my other projects, check out my GitHub: [${username}](https://github.com/${username}).
-`;
-}
+
 
 module.exports = generateMarkdown;
