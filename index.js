@@ -110,6 +110,13 @@ const questions = [
       name: 'test', 
     },
 
+    {
+      type: 'input',
+      message: 'Please enter contribution info.',
+      name: 'contributors', 
+    },
+
+
   ])
 ];
 
